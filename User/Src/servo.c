@@ -1,5 +1,5 @@
 #include "servo.h"
-#include "tim.h"   /* 使用 CubeMX 生成的 htim2、htim3 定时器句柄 */
+#include "tim.h"   
 
 /*
  * 舵机编号与定时器通道的对应关系：
