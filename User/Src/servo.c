@@ -45,7 +45,6 @@ void SERVO_SetAngle(uint8_t id, uint16_t angle_deg)
     pulse = SERVO_PULSE_MIN +
         ((uint32_t)angle_deg * (SERVO_PULSE_MAX - SERVO_PULSE_MIN)) / SERVO_ANGLE_MAX;
 
-    /* 调用底层函数，把换算好的脉宽写进定时器 */
     SERVO_SetPulseUs(id, (uint16_t)pulse);
 }
 
